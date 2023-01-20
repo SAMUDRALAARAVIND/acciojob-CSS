@@ -1,0 +1,132 @@
+/*
+    device-width > 800px make color of text in blue 
+    else make the color of the text in red 
+*/
+
+/* 
+
+@media (typeof device) also (expressions) {
+    regular CSS code
+}
+
+*/
+
+
+/* @media all {
+    div {
+        color: red ;
+    }
+} */
+
+/* 
+max-width & min-width 
+screen-width: 320px 
+color ?
+
+*/
+/* div{
+    font-size: 100px;
+}
+
+@media (min-width: 500px) {
+    div {
+       color: blue;
+    }
+}
+div {
+    color: yellow ;
+}
+@media (max-width: 400px) {
+    div {
+        color: red ;
+    }
+} */
+
+/* orientation => landscape and potrait */
+/* 
+width > height = landscape
+height > width = portrait
+*/
+
+/* @media (orientation: landscape) {
+    div {
+        color: red 
+    }
+}
+
+@media (orientation: portrait) {
+    div {
+        color: blue ;
+    }
+} */
+
+/* .container {
+    padding: 20px;
+    background-color: orange;
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    gap: 20px;
+}
+
+.item {
+  background-color: white;
+  padding: 50px;
+}
+.item3 {
+    grid-column: 1 / -1;
+}
+
+/* screenWidth < 800px */
+/* @media (max-width: 800px) {
+    .container {
+        grid-template-columns: 1fr ;
+    }
+}  */
+/* body{
+    margin: 0;
+}
+.container {
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content: space-between;
+    padding: 10px ;
+    background-color: black;
+    color: white ;
+}
+
+.menu {
+    display: none !important;
+}
+
+a {
+    text-decoration: none ;
+    color: white ;
+}
+
+@media (max-width: 700px) {
+    a {
+        display: none ;
+    }
+    .menu {
+        display: block !important;
+    }
+} */
+
+/*
+    em, rem, vw , vh , %
+    px, cm, mm, pt
+
+    width: 40vw ;
+
+    max()
+    min()
+    calc()
+    min-width
+    max-width
+*/
+
+
+img {
+    border: 5px solid red ;
+    width: calc(10px + 40vw / 2)
+}
